@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_movie"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        />
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/circleImageView_movie"
+        android:layout_toEndOf="@id/circleImageView_movie"
+        android:layout_toLeftOf="@id/textView_date_sortie"
+        android:layout_toStartOf="@id/textView_date_sortie"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        />
+    <TextView
+        android:id="@+id/textView_realisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAllCaps="false"
+        android:layout_below="@id/textView_name"
+        android:layout_toRightOf="@id/circleImageView_movie"
+        android:layout_toEndOf="@id/circleImageView_movie"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        />
+    <TextView
+        android:id="@+id/textView_date_sortie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginEnd="5sp"
+        />
+    <include layout="@layout/divider" />
+</RelativeLayout>
